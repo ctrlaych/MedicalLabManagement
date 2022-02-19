@@ -1,0 +1,77 @@
+﻿@{
+    Layout = null;
+}
+
+@model  string
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" href="~/patient.ico">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Patient Portal</title>
+    <link href="/Content/site.css" rel="stylesheet" />
+
+    <script src="/Scripts/modernizr-2.6.2.js"></script>
+
+</head>
+<div class="header1">
+    <font size="7"><b>NucleusLab</b></font>
+</div>
+<div class="header">
+    <h1><b><big><big>Patient Portal</big></big></b></h1>
+</div>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Technician Portal</title>
+        <script src="/Scripts/JavaScript2.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="/Content/StyleSheet1.css">
+    </head>
+    <h2 style="color: white; margin-left: 60%; margin-top:-18%">Sign In </h2>
+    <body>
+
+        <style>
+            body {
+                margin-left: 31%;
+                padding-top: 0px;
+                padding-left: 0px;
+                margin-top: 26%;
+                width: 25%;
+                /**/
+                background-image: url(https://muslimskeptic.com/wpcom-113638781/wp-content/uploads/2019/01/dna-background.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 130%;
+                color: white;
+            }
+
+            label {
+                margin-left: 55%;
+            }
+        </style>
+        <form method="post" action="../client/authenticate2">
+            <input type="text" id="userNameField" style="border: 2px solid white" class="rcorners" placeholder="Username" name="userid"></input>
+            <br />
+            <br />
+            <input type="password" id="passwordField" class="rcorners" placeholder="Password" name="password" style="border: 2px solid white"> </input>
+            <br />
+            <br />
+            <input type="submit" id="Submitbut" value="Login" onclick="checkForEmptyFields()" class="rcorners" style="margin-left:55%">
+            <br />
+            <label> @Model</label>
+        </form>
+        <input type="submit" style="margin-left: 47%;border-radius: 25px;padding: 6px 20px;border: 1px solid #000000;" onclick="location.href='@Url.Action("choose","first")'" value="Back">
+        <input type="submit" style="border-radius: 25px;padding: 6px 20px;border: 1px solid #000000;" onclick="location.href='@Url.Action("signup","Csignup")'" value="Sign up" />
+        <style>
+
+        </style>
+       
+    </body>
+</html>
+
+
+</body>
+</html>
